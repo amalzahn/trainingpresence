@@ -40,7 +40,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
             "outputPath": "dist/trainingpresence",
             "index": "src/index.html",
@@ -91,10 +91,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "trainingpresence:build:production"
+              "buildTarget": "trainingpresence:build:production"
             },
             "development": {
-              "browserTarget": "trainingpresence:build:development"
+              "buildTarget": "trainingpresence:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -102,7 +102,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "trainingpresence:build"
+            "buildTarget": "trainingpresence:build"
           }
         },
         "test": {
