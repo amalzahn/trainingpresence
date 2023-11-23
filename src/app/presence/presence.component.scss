@@ -1,0 +1,28 @@
+.halle {
+    background-color: lightblue;
+}
+
+.beach {
+    background-color: alert;
+    /* background-color: yellow; */
+}
+
+.summe {
+    background-color: lightyellow;
+}
+
+th.nexttrainingday {
+    background-color: lightpink;
+}
+
+td.nexttrainingday {
+    background-color: pink;
+}
+
+.summe.nexttrainingday {
+    background-color: lightpink;
+}
+
+.mat-mdc-cell:hover {
+    background-color: brown; // color(srgb red green blue);
+}

@@ -1,0 +1,20 @@
+<h3 mat-dialog-title>
+    <div>Tag: {{data.day}}</div>
+    <div>Spieler: {{data.member}}</div>
+</h3>
+<mat-dialog-content  class="content">
+    <div class="row">
+        <mat-radio-group aria-label="Select an option" [(ngModel)]="data.presence" >
+            <mat-label>Anwesend</mat-label>
+            <mat-radio-button value="Ja">Ja</mat-radio-button>
+            <mat-radio-button value="Nein">Nein</mat-radio-button>
+            <mat-radio-button value="Vielleicht">Vielleicht</mat-radio-button>
+            <mat-radio-button *ngIf="data.member == 'Halle'" value="Ferien">Ferien</mat-radio-button>
+            <mat-radio-button value="">nicht gesetzt</mat-radio-button>
+        </mat-radio-group>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions class="action">
+    <button mat-raised-button type="button" mat-dialog-close>Abbrechen</button>
+    <button mat-raised-button color="primary" [mat-dialog-close]="data">Speichern</button>
+</mat-dialog-actions>

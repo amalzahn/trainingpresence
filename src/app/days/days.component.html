@@ -1,0 +1,25 @@
+<table mat-table [dataSource]="dayDataSource" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="day">
+      <th mat-header-cell *matHeaderCellDef> day </th>
+      <td mat-cell *matCellDef="let element"> {{element.day | date:'short'}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="holiday">
+      <th mat-header-cell *matHeaderCellDef> holiday </th>
+      <td mat-cell *matCellDef="let element"> {{element.holiday}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="beach">
+      <th mat-header-cell *matHeaderCellDef> beach </th>
+      <td mat-cell *matCellDef="let element"> {{element.beach}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="halle">
+      <th mat-header-cell *matHeaderCellDef> halle </th>
+      <td mat-cell *matCellDef="let element"> {{element.halle}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="dayDisplayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: dayDisplayedColumns;"></tr>
+  </table>
