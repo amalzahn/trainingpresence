@@ -13,7 +13,7 @@ registerLocaleData(localeDe, 'de-DE', localeDeExtra);
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet,RouterModule,MatToolbarModule,MatIconModule],
+  imports: [CommonModule, RouterOutlet, RouterModule, MatToolbarModule, MatIconModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

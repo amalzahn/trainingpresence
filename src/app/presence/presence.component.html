@@ -1,9 +1,10 @@
 <table mat-table [dataSource]="presenceDataSource" class="mat-elevation-z8">
-    <ng-container *ngFor="let disCol of presenceDisplayedColumns; let colIndex = index" matColumnDef="{{disCol}}">
-        <th mat-header-cell class = "{{presenceColumnClass[disCol]}}" *matHeaderCellDef> {{disCol}} </th>
-        <td mat-cell *matCellDef="let element; let i = index" class = "{{element['rowclass']}} {{presenceColumnClass[disCol]}}" (click)="openEditForm(element['Spieler'], disCol, element[disCol], i)" > {{element[disCol]}} </td>
+  @for (disCol of presenceDisplayedColumns; track disCol; let colIndex = $index) {
+    <ng-container matColumnDef="{{disCol}}">
+      <th mat-header-cell class = "{{presenceColumnClass[disCol]}}" *matHeaderCellDef> {{disCol}} </th>
+      <td mat-cell *matCellDef="let element; let i = index" class = "{{element['rowclass']}} {{presenceColumnClass[disCol]}}" (click)="openEditForm(element['Spieler'], disCol, element[disCol], i)" > {{element[disCol]}} </td>
     </ng-container>
-
-    <tr mat-header-row *matHeaderRowDef="presenceDisplayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: presenceDisplayedColumns;"></tr>
+  }
+  <tr mat-header-row *matHeaderRowDef="presenceDisplayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: presenceDisplayedColumns;"></tr>
 </table>

@@ -18,7 +18,7 @@ const DAY_DATA: DayPresence[] = [
 @Component({
   selector: 'app-days',
   standalone: true,
-  imports: [CommonModule,MatTableModule],
+  imports: [CommonModule, MatTableModule],
   templateUrl: './days.component.html',
   styleUrls: ['./days.component.scss']
 })
