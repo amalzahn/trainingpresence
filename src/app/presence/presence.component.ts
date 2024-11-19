@@ -35,11 +35,10 @@ const PRESENCE_DATA: Presence[] = [
 const one_day = 1000 * 60 * 60 * 24;
 
 @Component({
-  selector: 'app-presence',
-  standalone: true,
-  imports: [CommonModule, MatTableModule, MatDialogModule, PresenceEditComponent],
-  templateUrl: './presence.component.html',
-  styleUrls: ['./presence.component.scss']
+    selector: 'app-presence',
+    imports: [CommonModule, MatTableModule, MatDialogModule, PresenceEditComponent],
+    templateUrl: './presence.component.html',
+    styleUrls: ['./presence.component.scss']
 })
 export class PresenceComponent {
   presenceDisplayedColumns: string[] = []; //['spieler','yesterday','today','tomorrow'];

@@ -16,11 +16,10 @@ const DAY_DATA: DayPresence[] = [
 ];
 
 @Component({
-  selector: 'app-days',
-  standalone: true,
-  imports: [CommonModule, MatTableModule],
-  templateUrl: './days.component.html',
-  styleUrls: ['./days.component.scss']
+    selector: 'app-days',
+    imports: [CommonModule, MatTableModule],
+    templateUrl: './days.component.html',
+    styleUrls: ['./days.component.scss']
 })
 
 export class DaysComponent {

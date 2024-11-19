@@ -15,11 +15,10 @@ export interface DialogData {
 }
 
 @Component({
-  selector: 'app-presence-edit',
-  standalone: true,
-  imports: [CommonModule, MatFormFieldModule, MatInputModule, FormsModule, MatRadioModule, MatDialogModule, ReactiveFormsModule],
-  templateUrl: './presence-edit.component.html',
-  styleUrls: ['./presence-edit.component.scss']
+    selector: 'app-presence-edit',
+    imports: [CommonModule, MatFormFieldModule, MatInputModule, FormsModule, MatRadioModule, MatDialogModule, ReactiveFormsModule],
+    templateUrl: './presence-edit.component.html',
+    styleUrls: ['./presence-edit.component.scss']
 })
 export class PresenceEditComponent implements OnInit {
 //  form : FormGroup;

@@ -15,11 +15,10 @@ const MEMBER_DATA: Member[] = [
 ];
 
 @Component({
-  selector: 'app-members',
-  standalone: true,
-  imports: [CommonModule, MatTableModule],
-  templateUrl: './members.component.html',
-  styleUrls: ['./members.component.scss']
+    selector: 'app-members',
+    imports: [CommonModule, MatTableModule],
+    templateUrl: './members.component.html',
+    styleUrls: ['./members.component.scss']
 })
 export class MembersComponent {
   memberDisplayedColumns: string[] = ['name', 'email', 'modified'];

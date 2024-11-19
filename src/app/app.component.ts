@@ -11,11 +11,10 @@ import localeDeExtra from '@angular/common/locales/extra/de';
 registerLocaleData(localeDe, 'de-DE', localeDeExtra);
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterModule, MatToolbarModule, MatIconModule],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    imports: [CommonModule, RouterOutlet, RouterModule, MatToolbarModule, MatIconModule],
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'trainingpresence';
