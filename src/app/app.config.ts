@@ -23,7 +23,7 @@ const firebaseConfig = {
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    importProvidersFrom(BrowserModule, provideFirebaseApp(() => initializeApp(firebaseConfig)), provideFirestore(() => getFirestore())),
+    // importProvidersFrom(BrowserModule, provideFirebaseApp(() => initializeApp(firebaseConfig)), provideFirestore(() => getFirestore())),
     SharedService,
     { provide: LOCALE_ID, useValue: 'de-DE' },
     provideRouter(routes),
